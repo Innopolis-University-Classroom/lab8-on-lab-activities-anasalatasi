@@ -12,24 +12,31 @@ import java.util.List;
  * it should only have one reason to change
  */
 
+
+
+
 public class Cart {
+public class addToCart{
 
     List<Product> products;
     double totals;
-    String token;
-
+    
     void addToCart(Product product) {
         products.add(product);
     }
-
-    void removeFromCart(Product product) {
+}
+public class removeFromCart{
+        List <Product> products;
+        void removeFromCart(Product product) {
         products.remove(product);
     }
-
+}
+public class discountCart{
+    double total ;
     void applyDiscount(int percentage) {
         totals = totals * percentage;
     }
-
+}
 
 }
 
